@@ -1,0 +1,36 @@
+\documentclass[tikz,multi=chem]{standalone}
+\usepackage{chemfig}
+
+\begin{document}
+
+\newlength{\bond}
+\setlength{\bond}{1.5pt}
+\setchemfig{cram width=\bond}% chemfig v1.3 or later
+
+\definesubmol\benzene{C(-[::+90]H)(-[::-90]H)}
+\chemfig[atom sep=2em,cram width=3pt]{
+  **6(--
+    (*6(-N
+      (--[::60]
+      -[6,,,,line width=\bond]
+        (-[::-60,,,,line width=\bond])
+      -[::60,,,,line width=\bond])
+      -(**6(------))
+      --S--)
+    )----
+  )
+}
+\chemfig[atom sep=2em,cram width=3pt]{
+  **6(--
+    (*6(-N
+      (--[::60]
+      -[6,,,,line width=\bond]
+        (-[::-60,,,,line width=\bond])
+      -[::60,,,,line width=\bond])
+      -(**6(------))
+      --S--)
+    )----
+  )
+}
+
+\end{document}
