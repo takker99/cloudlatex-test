@@ -4,7 +4,9 @@
     "cloudlatex.supressIcon": true,
     "cloudlatex.projectId": 448361,
     "latex-workshop.latex.outDir": "dist",
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    "latex-workshop.latex.autoBuild.run": "never",
     "[latex]": {
       "editor.formatOnSave": false,
-    }
+    },
 }
